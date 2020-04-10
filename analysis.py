@@ -51,7 +51,6 @@ def getCountryDict(date):
         if country in countries:
             countries[country]['confirmed'] += confirmed
             countries[country]['deaths'] += deaths
-            countries[country]['mortality rate'] = 0
         else:
             countries[country] = {'confirmed': confirmed, 'deaths': deaths, 'mortality rate': mortality}
     for country in countries:
@@ -60,30 +59,65 @@ def getCountryDict(date):
         countries[country]['mortality rate'] = d/c*100
     return countries
 
+def getStateDict(date):
+    states = {}
+    for i in range(len(date)):
+        country = date.loc[i, 'Country_Region']
+        if country != 'US':
+            continue
+        confirmed = int(date.loc[i, 'Confirmed'])
+        deaths = int(date.loc[i, 'Deaths'])
+        state = date.loc[i, 'Province_State']
+        mortality = 0
+        if state in states:
+            states[state]['confirmed'] += confirmed
+            states[state]['deaths'] += deaths
+        else:
+            states[state] = {'confirmed': confirmed, 'deaths': deaths, 'mortality rate': mortality}
+    for state in states:
+        c = states[state]['confirmed']
+        d = states[state]['deaths']
+        states[state]['mortality rate'] = 0 if c == 0 else d/c*100
+    return states
+
+
 def getCountryArray(date):
     countries = getCountryDict(date)
     country_list = [country for country in countries.keys()]
     confirmed_list = [int(countries[country]['confirmed']) for country in countries.keys()]
     death_list = [int(countries[country]['deaths']) for country in countries.keys()]
-    lethality_list = [round(float(death/confirmed*100), 4) for confirmed, death in zip(confirmed_list, death_list)]
+    lethality_list = [round(float(countries[country]['mortality rate']), 4) for country in countries.keys()]
     master = [[country, confirmed, deaths, lethality] for country, confirmed, deaths, lethality in zip (country_list, confirmed_list, death_list, lethality_list)]
     return master
 
-master = getCountryArray(apr8)
-countries = getCountryDict(apr8)
-with open("countries.json", 'w') as f:
-    json.dump(countries, f)
+def getStateArray(date):
+    states = getStateDict(date)
+    state_list = [state for state in states.keys()]
+    confirmed_list = [int(states[state]['confirmed']) for state in states.keys()]
+    death_list = [int(states[state]['deaths']) for state in states.keys()]
+    lethality_list = [round(float(states[state]['mortality rate']), 4) for state in states.keys()]
+    master = [[state, confirmed, deaths, lethality] for state, confirmed, deaths, lethality in zip (state_list, confirmed_list, death_list, lethality_list)]
+    return master
 
-with open("country_data.csv", 'w') as fout:
-    writer = csv.writer(fout)
-    writer.writerows(master)
+def getGeorgiaArray(date):
+    master = []
+    for i in range(len(date)):
+        state = date.loc[i, 'Province_State']
+        if state != 'Georgia':
+            continue
+        county = date.loc[i, 'Admin2']
+        confirmed = int(date.loc[i, 'Confirmed'])
+        deaths = int(date.loc[i, 'Deaths'])
+        mortality_rate = 0 if deaths == 0 else round(deaths/confirmed*100, 4)
+        master.append([county, confirmed, deaths, mortality_rate])
+    return master
 
 #don't use createMassiveData() because utilizing time_series data is better
 daily_report_files = os.listdir('./csse_covid_19_data/csse_covid_19_daily_reports')
 def createMassiveData():
     for i in range(0, len(daily_report_files)):
         date_file = daily_report_files[i]
-        print(date_file)
+        # print(date_file)
         #removing old months with different data (up to 3-21)
         if date_file[0] != '0' or date_file[1] == '1' or date_file[1] == '2':
             continue
@@ -93,12 +127,20 @@ def createMassiveData():
             elif date_file[3] == '2' and (date_file[4] == '0' or date_file[4] == '1'):
                 continue
         afile = load_file(f"./csse_covid_19_data/csse_covid_19_daily_reports/{date_file}")
-        stats = getCountryArray(afile)
-        with open(f"./cleaned_data/daily/{date_file}", 'w') as f:
+        country_stats = getCountryArray(afile)
+        state_stats = getStateArray(afile)
+        georgia_stats = getGeorgiaArray(afile)
+        with open(f"./cleaned_data/daily/countries/(world)_{date_file}", 'w') as f:
             writer = csv.writer(f)
-            writer.writerows(stats)
-            print('added 1 file')
-
+            writer.writerows(country_stats)
+            # print('added 1 file')
+        with open(f"./cleaned_data/daily/states/(states)_{date_file}", 'w') as f:
+            writer = csv.writer(f)
+            writer.writerows(state_stats)
+        with open(f"./cleaned_data/daily/georgia/(georgia)_{date_file}", 'w') as f:
+            writer = csv.writer(f)
+            writer.writerows(georgia_stats)
+        
 createMassiveData()
 
 
