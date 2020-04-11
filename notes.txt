@@ -1,0 +1,4 @@
+#tableau time series data
+#integrate world data to add to csv
+#sql integration of csv files to make joins easier
+#R analysis/regression + python plotting tools

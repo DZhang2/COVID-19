@@ -146,7 +146,3 @@ createMassiveData()
 
 
 
-#notes
-#tableau time series data
-#sql integration of csv files to make joins easier
-#R analysis/regression + python plotting tools
