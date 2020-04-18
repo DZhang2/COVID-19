@@ -6,7 +6,11 @@ def load_file(path):
     file = pd.read_csv(path)
     return file
 
-apr8 = load_file("./csse_covid_19_data/csse_covid_19_daily_reports/04-08-2020.csv")
+#date in format mm-dd-yyyy
+def getDailyReport(date):
+    return load_file("./csse_covid_19_data/csse_covid_19_daily_reports/" + date + ".csv")
+
+apr12 = getDailyReport("04-12-2020")
 
 def cleanTimeSeriesWorld(df):
     confirmed = df.groupby("Country_Region")["Confirmed"].sum()
@@ -42,17 +46,17 @@ def cleanTimeSeriesCountry(df, country):
     return res
 
 def cleanTimeSeriesState(df, state):
-    ga = df[df["Province_State"]==state][["Admin2", "Confirmed", "Deaths"]]
-    ga["Mortality Rate"] = ga["Deaths"]/ga["Confirmed"]*100
-    ga = ga.sort_values(by="Confirmed", ascending=False)
-    ga.columns = ["County", "Confirmed", "Deaths", "Mortality Rate"]
-    return ga
+    st = df[df["Province_State"]==state][["Admin2", "Confirmed", "Deaths"]]
+    st["Mortality Rate"] = np.where(st["Confirmed"] == 0, 0, st["Deaths"]/st["Confirmed"]*100)
+    st = st.sort_values(by="Confirmed", ascending=False)
+    st.columns = ["County", "Confirmed", "Deaths", "Mortality Rate"]
+    return st
 
 
 
-world = cleanTimeSeriesWorld(apr8)
-us = cleanTimeSeriesUS(apr8)
-ny = cleanTimeSeriesState(apr8, "New York")
+world = cleanTimeSeriesWorld(apr12)
+us = cleanTimeSeriesUS(apr12)
+ny = cleanTimeSeriesState(apr12, "New York")
 print(ny)
 
 
