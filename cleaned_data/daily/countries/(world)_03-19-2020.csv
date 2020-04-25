@@ -1,0 +1,169 @@
+Country/Region,Confirmed,Deaths,Mortality Rate
+China,81156,3249,4.003400857607571
+Italy,41035,3405,8.29779456561472
+Iran,18407,1284,6.975607105992286
+Spain,17963,830,4.620609029672104
+Germany,15320,44,0.28720626631853785
+US,13680,200,1.461988304093567
+France,10886,243,2.232224875987507
+"Korea, South",8565,91,1.0624635143023935
+Switzerland,4075,41,1.0061349693251533
+United Kingdom,2716,138,5.08100147275405
+Netherlands,2465,77,3.123732251521298
+Austria,2013,6,0.29806259314456035
+Belgium,1795,21,1.16991643454039
+Norway,1746,7,0.40091638029782356
+Sweden,1439,11,0.7644197359277276
+Denmark,1225,6,0.4897959183673469
+Japan,924,29,3.1385281385281383
+Malaysia,900,2,0.2222222222222222
+Canada,800,9,1.125
+Portugal,785,3,0.3821656050955414
+Cruise Ship,712,7,0.9831460674157303
+Czechia,694,0,0.0
+Australia,681,6,0.881057268722467
+Israel,677,0,0.0
+Brazil,621,6,0.966183574879227
+Ireland,557,3,0.5385996409335727
+Qatar,460,0,0.0
+Pakistan,454,2,0.4405286343612335
+Greece,418,6,1.4354066985645932
+Finland,400,0,0.0
+Poland,355,5,1.4084507042253522
+Singapore,345,0,0.0
+Luxembourg,335,4,1.1940298507462688
+Iceland,330,1,0.30303030303030304
+Indonesia,311,25,8.038585209003216
+Slovenia,286,1,0.34965034965034963
+Bahrain,278,1,0.3597122302158274
+Romania,277,0,0.0
+Saudi Arabia,274,0,0.0
+Thailand,272,1,0.3676470588235294
+Estonia,267,0,0.0
+Egypt,256,6,2.34375
+Chile,238,0,0.0
+Peru,234,0,0.0
+Philippines,217,17,7.834101382488479
+Ecuador,199,3,1.507537688442211
+Russia,199,1,0.5025125628140703
+India,194,4,2.0618556701030926
+Turkey,192,3,1.5625
+Iraq,192,13,6.770833333333333
+Lebanon,157,4,2.547770700636943
+South Africa,150,0,0.0
+Kuwait,148,0,0.0
+United Arab Emirates,140,0,0.0
+Slovakia,123,1,0.8130081300813009
+San Marino,119,11,9.243697478991598
+Mexico,118,1,0.847457627118644
+Armenia,115,0,0.0
+Panama,109,1,0.9174311926605505
+Taiwan*,108,1,0.9259259259259258
+Croatia,105,1,0.9523809523809524
+Serbia,103,0,0.0
+Colombia,102,0,0.0
+Argentina,97,3,3.0927835051546393
+Bulgaria,94,3,3.1914893617021276
+Algeria,87,9,10.344827586206897
+Latvia,86,0,0.0
+Vietnam,85,0,0.0
+Uruguay,79,0,0.0
+Brunei,75,0,0.0
+Hungary,73,1,1.36986301369863
+Jordan,69,0,0.0
+Costa Rica,69,1,1.4492753623188406
+Cyprus,67,0,0.0
+Albania,64,2,3.125
+Bosnia and Herzegovina,63,0,0.0
+Morocco,63,2,3.1746031746031744
+Sri Lanka,60,0,0.0
+Malta,53,0,0.0
+Andorra,53,0,0.0
+Belarus,51,0,0.0
+Moldova,49,1,2.0408163265306123
+Oman,48,0,0.0
+North Macedonia,48,0,0.0
+Azerbaijan,44,1,2.272727272727273
+Kazakhstan,44,0,0.0
+Venezuela,42,0,0.0
+Georgia,40,0,0.0
+Tunisia,39,1,2.564102564102564
+Cambodia,37,0,0.0
+Lithuania,36,0,0.0
+Dominican Republic,34,2,5.88235294117647
+Guadeloupe,33,0,0.0
+Burkina Faso,33,1,3.0303030303030303
+Senegal,31,0,0.0
+New Zealand,28,0,0.0
+Liechtenstein,28,0,0.0
+Uzbekistan,23,0,0.0
+Martinique,23,1,4.3478260869565215
+Afghanistan,22,0,0.0
+Bangladesh,17,1,5.88235294117647
+Ukraine,16,2,12.5
+Jamaica,15,1,6.666666666666667
+Reunion,14,0,0.0
+Congo (Kinshasa),14,0,0.0
+Cameroon,13,0,0.0
+Maldives,13,0,0.0
+Bolivia,12,0,0.0
+Honduras,12,0,0.0
+Cuba,11,1,9.090909090909092
+Ghana,11,0,0.0
+Paraguay,11,0,0.0
+French Guiana,11,0,0.0
+Guatemala,9,1,11.11111111111111
+Trinidad and Tobago,9,0,0.0
+Cote d'Ivoire,9,0,0.0
+Nigeria,8,0,0.0
+Rwanda,8,0,0.0
+Kenya,7,0,0.0
+Monaco,7,0,0.0
+Guyana,7,1,14.285714285714285
+Tanzania,6,0,0.0
+Equatorial Guinea,6,0,0.0
+Ethiopia,6,0,0.0
+Seychelles,6,0,0.0
+Mongolia,6,0,0.0
+Barbados,5,0,0.0
+Aruba,4,0,0.0
+Congo (Brazzaville),3,0,0.0
+"Bahamas, The",3,0,0.0
+Namibia,3,0,0.0
+Kyrgyzstan,3,0,0.0
+Montenegro,3,0,0.0
+Mauritius,3,0,0.0
+Mayotte,3,0,0.0
+Benin,2,0,0.0
+Sudan,2,1,50.0
+Mauritania,2,0,0.0
+Zambia,2,0,0.0
+Liberia,2,0,0.0
+Kosovo,2,0,0.0
+Saint Lucia,2,0,0.0
+Eswatini,1,0,0.0
+Central African Republic,1,0,0.0
+Antigua and Barbuda,1,0,0.0
+Nepal,1,0,0.0
+Nicaragua,1,0,0.0
+Holy See,1,0,0.0
+Bhutan,1,0,0.0
+Guinea,1,0,0.0
+Togo,1,0,0.0
+Fiji,1,0,0.0
+Gabon,1,0,0.0
+Chad,1,0,0.0
+Suriname,1,0,0.0
+"Gambia, The",1,0,0.0
+Saint Vincent and the Grenadines,1,0,0.0
+Djibouti,1,0,0.0
+Somalia,1,0,0.0
+El Salvador,1,0,0.0
+Puerto Rico,0,0,
+The Gambia,0,0,
+Guam,0,0,
+Guernsey,0,0,
+Greenland,0,0,
+Republic of the Congo,0,0,
+Jersey,0,0,
+The Bahamas,0,0,

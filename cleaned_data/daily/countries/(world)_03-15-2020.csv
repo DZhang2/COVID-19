@@ -1,0 +1,148 @@
+Country/Region,Confirmed,Deaths,Mortality Rate
+China,81003,3203,3.954174536745553
+Italy,24747,1809,7.309976966905079
+Iran,13938,724,5.194432486726933
+"Korea, South",8162,75,0.9188924283263906
+Spain,7798,289,3.7060784816619647
+Germany,5795,11,0.1898188093183779
+France,4513,91,2.0163970751163305
+US,3499,63,1.8005144326950557
+Switzerland,2200,14,0.6363636363636364
+Norway,1221,3,0.2457002457002457
+United Kingdom,1144,21,1.8356643356643356
+Netherlands,1135,20,1.762114537444934
+Sweden,1022,3,0.29354207436399216
+Belgium,886,4,0.4514672686230248
+Denmark,875,2,0.2285714285714286
+Austria,860,1,0.11627906976744186
+Japan,839,22,2.622169249106079
+Cruise Ship,696,7,1.0057471264367817
+Malaysia,428,0,0.0
+Qatar,401,0,0.0
+Greece,331,4,1.2084592145015105
+Australia,297,3,1.0101010101010102
+Czechia,253,0,0.0
+Israel,251,0,0.0
+Canada,250,1,0.4
+Portugal,245,0,0.0
+Finland,244,0,0.0
+Singapore,226,0,0.0
+Slovenia,219,1,0.45662100456621
+Bahrain,214,0,0.0
+Iceland,171,5,2.923976608187134
+Estonia,171,0,0.0
+Brazil,162,0,0.0
+Philippines,140,11,7.857142857142857
+Romania,131,0,0.0
+Ireland,129,2,1.550387596899225
+Poland,119,3,2.5210084033613445
+Indonesia,117,5,4.273504273504273
+Iraq,116,10,8.620689655172415
+Thailand,114,1,0.8771929824561403
+India,113,2,1.7699115044247788
+Kuwait,112,0,0.0
+Lebanon,110,3,2.727272727272727
+Egypt,110,2,1.8181818181818181
+Saudi Arabia,103,0,0.0
+San Marino,101,5,4.9504950495049505
+United Arab Emirates,98,0,0.0
+Chile,74,0,0.0
+Russia,63,0,0.0
+Taiwan*,59,1,1.694915254237288
+Luxembourg,59,1,1.694915254237288
+Vietnam,56,0,0.0
+Slovakia,54,0,0.0
+Pakistan,53,0,0.0
+South Africa,51,0,0.0
+Bulgaria,51,2,3.9215686274509802
+Brunei,50,0,0.0
+Croatia,49,0,0.0
+Serbia,48,0,0.0
+Algeria,48,4,8.333333333333332
+Argentina,45,2,4.444444444444445
+Panama,43,1,2.3255813953488373
+Peru,43,0,0.0
+Albania,42,1,2.380952380952381
+Mexico,41,0,0.0
+Colombia,34,0,0.0
+Georgia,33,0,0.0
+Hungary,32,1,3.125
+Latvia,30,0,0.0
+Ecuador,28,2,7.142857142857142
+Morocco,28,1,3.571428571428571
+Costa Rica,27,0,0.0
+Belarus,27,0,0.0
+Armenia,26,0,0.0
+Cyprus,26,0,0.0
+Senegal,24,0,0.0
+Bosnia and Herzegovina,24,0,0.0
+Moldova,23,0,0.0
+Azerbaijan,23,1,4.3478260869565215
+Oman,22,0,0.0
+Malta,21,0,0.0
+Sri Lanka,18,0,0.0
+Tunisia,18,0,0.0
+Afghanistan,16,0,0.0
+North Macedonia,14,0,0.0
+Maldives,13,0,0.0
+Lithuania,12,0,0.0
+Dominican Republic,11,0,0.0
+Jamaica,10,0,0.0
+Venezuela,10,0,0.0
+Bolivia,10,0,0.0
+Martinique,9,0,0.0
+Kazakhstan,9,0,0.0
+New Zealand,8,0,0.0
+Jordan,8,0,0.0
+Reunion,7,0,0.0
+Cambodia,7,0,0.0
+Ghana,6,0,0.0
+Paraguay,6,0,0.0
+Turkey,6,0,0.0
+Bangladesh,5,0,0.0
+Guyana,4,1,25.0
+Uruguay,4,0,0.0
+Liechtenstein,4,0,0.0
+Cuba,4,0,0.0
+Burkina Faso,3,0,0.0
+Guadeloupe,3,0,0.0
+Kenya,3,0,0.0
+Ukraine,3,1,33.33333333333333
+Honduras,3,0,0.0
+Saint Lucia,2,0,0.0
+Seychelles,2,0,0.0
+Trinidad and Tobago,2,0,0.0
+Jersey,2,0,0.0
+Nigeria,2,0,0.0
+Namibia,2,0,0.0
+Congo (Kinshasa),2,0,0.0
+Monaco,2,0,0.0
+Aruba,2,0,0.0
+Kosovo,2,0,0.0
+Cameroon,2,0,0.0
+Rwanda,1,0,0.0
+Central African Republic,1,0,0.0
+Cote d'Ivoire,1,0,0.0
+Congo (Brazzaville),1,0,0.0
+Bhutan,1,0,0.0
+Cayman Islands,1,0,0.0
+Curacao,1,0,0.0
+Uzbekistan,1,0,0.0
+Antigua and Barbuda,1,0,0.0
+Andorra,1,0,0.0
+Togo,1,0,0.0
+Ethiopia,1,0,0.0
+Equatorial Guinea,1,0,0.0
+Eswatini,1,0,0.0
+Suriname,1,0,0.0
+Sudan,1,1,100.0
+Gabon,1,0,0.0
+Guatemala,1,0,0.0
+Guernsey,1,0,0.0
+Guinea,1,0,0.0
+Holy See,1,0,0.0
+Mauritania,1,0,0.0
+Mongolia,1,0,0.0
+Nepal,1,0,0.0
+Saint Vincent and the Grenadines,1,0,0.0
+occupied Palestinian territory,0,0,
